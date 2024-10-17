@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "listit_backend": {
+      "main": "src/listit_backend/main.mo",
+      "type": "motoko"
+    },
+    "listit_frontend": {
+      "dependencies": [
+        "listit_backend"
+      ],
+      "source": [
+        "src/listit_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
